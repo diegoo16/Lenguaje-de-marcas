@@ -1,48 +1,139 @@
 :root{
     --bgycolor:rgb(0, 13, 255);
+    --bgcolorsecundary:rgb(0, 6, 111);
+    --bgcolormenu:rgb(138, 205, 246);
     --lettercolor:rgb(0, 0, 0);
     --secundarylettercolor:rgb(255, 255, 255);
 }
 
 .header_box{
-    height: 300px;
+    height: 190px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
 }
 
 .header_box_img{
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
 }
 
 .body{
     display: flex;
     flex-direction: row;
-    gap: 10px;
     margin: 0%;
 }
 
 .body_menu{
     display: flex;
     flex-direction: column;
-    font-size: 15px;
-    width: 100px;
+    width: 250px;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: var(--bgcolormenu);
+    border-radius: 5px;
 }
 
 .body_menu_principal{
     border-radius: 10px;
     background-color: var(--bgycolor);
+    font-size: 10px;
+    margin: 5px;
+}
+
+.body_menu_principal:hover{
+    border-radius: 10px;
+    background-color: var(--bgcolorsecundary);
+    color: var(--secundarylettercolor);
+    font-size: 10px;
+}
+
+.body_menu_principal_text{
+    color: var(--secundarylettercolor);
 }
 
 .body_menu_equipos{
     border-radius: 10px;
     background-color: var(--bgycolor);
+    font-size: 10px;
+    margin: 5px;
+}
+
+.body_menu_equipos:hover{
+    border-radius: 10px;
+    background-color: var(--bgcolorsecundary);
+    color: var(--secundarylettercolor);
+    font-size: 10px;
+}
+
+.body_menu_equipos_text{
+    color: var(--secundarylettercolor);
 }
 
 .body_menu_cuadropartidos{
     border-radius: 10px;
     background-color: var(--bgycolor);
+    font-size: 10px;
+    margin: 5px;
+}
+
+.body_menu_cuadropartidos:hover{
+    border-radius: 10px;
+    background-color: var(--bgcolorsecundary);
+    color: var(--secundarylettercolor);
+    font-size: 10px;
+}
+
+.body_menu_cuadropartidos_text{
+    color: var(--secundarylettercolor);
 }
 
 .body_menu_resultados{
     border-radius: 10px;
     background-color: var(--bgycolor);
+    font-size: 10px;
+    margin: 5px;
+}
+
+.body_menu_resultados:hover{
+    border-radius: 10px;
+    background-color: var(--bgcolorsecundary);
+    color: var(--secundarylettercolor);
+    font-size: 10px;
+}
+
+.body_menu_resultados_text{
+    color: var(--secundarylettercolor);
+}
+
+.body_menu_colaboradores{
+    border-radius: 10px;
+    background-color: var(--bgycolor);
+    font-size: 10px;
+    margin: 5px;
+}
+
+.body_menu_colaboradores:hover{
+    border-radius: 10px;
+    background-color: var(--bgcolorsecundary);
+    color: var(--secundarylettercolor);
+    font-size: 10px;
+}
+
+.body_menu_colaboradores_text{
+    color: var(--secundarylettercolor);
+}
+
+.body_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.body_principal_title{
+    align-items: center;
+    font-size: 20px;
 }
