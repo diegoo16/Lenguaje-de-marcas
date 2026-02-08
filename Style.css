@@ -1,0 +1,48 @@
+:root{
+    --bgycolor:rgb(0, 13, 255);
+    --lettercolor:rgb(0, 0, 0);
+    --secundarylettercolor:rgb(255, 255, 255);
+}
+
+.header_box{
+    height: 300px;
+}
+
+.header_box_img{
+    width: 200px;
+    height: 150px;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0%;
+}
+
+.body_menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 100px;
+}
+
+.body_menu_principal{
+    border-radius: 10px;
+    background-color: var(--bgycolor);
+}
+
+.body_menu_equipos{
+    border-radius: 10px;
+    background-color: var(--bgycolor);
+}
+
+.body_menu_cuadropartidos{
+    border-radius: 10px;
+    background-color: var(--bgycolor);
+}
+
+.body_menu_resultados{
+    border-radius: 10px;
+    background-color: var(--bgycolor);
+}
