@@ -1,139 +1,104 @@
-:root{
-    --bgycolor:rgb(0, 13, 255);
-    --bgcolorsecundary:rgb(0, 6, 111);
-    --bgcolormenu:rgb(138, 205, 246);
-    --lettercolor:rgb(0, 0, 0);
-    --secundarylettercolor:rgb(255, 255, 255);
+:root {
+  --azul-oscuro: #0a1a3f;
+  --azul: #0b2cff;
+  --blanco: #ffffff;
+  --gris: #e5e5e5;
 }
 
-.header_box{
-    height: 190px;
-    background-color: aqua;
-    align-items: center;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.header_box_img{
-    width: 300px;
-    height: 190px;
-    align-items: center;
-    justify-content: center;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--gris);
+  background-image: url(https://m.media-amazon.com/images/S/pv-target-images/13b61da7ddb09b2b9941108b9ca19d6b343cca6ebdde7cfc3cf8aadddef9af0c._SX1080_FMjpg_.jpg) ;
+  background-size: cover;
+  background-position: c;
 }
 
-.body{
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
+
+/* Pagina Principal*/
+.header {
+  background: linear-gradient(90deg, #020c2b, #0b2cff);
+  color: var(--blanco);
+  text-align: center;
+  padding: 30px 20px;
 }
 
-.body_menu{
-    display: flex;
+.logo {
+  width: 170px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 0%;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background: var(--azul-oscuro);
+}
+
+.menu a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: var(--azul);
+}
+
+
+.contenido {
+  flex: 1;
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--blanco);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.contenido h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--azul-oscuro);
+}
+
+.texto p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.footer {
+  background: #000;
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
     flex-direction: column;
-    width: 250px;
-    gap: 10px;
-    margin-top: 10px;
-    background-color: var(--bgcolormenu);
-    border-radius: 5px;
-}
+  }
 
-.body_menu_principal{
-    border-radius: 10px;
-    background-color: var(--bgycolor);
-    font-size: 10px;
-    margin: 5px;
-}
+  .menu a {
+    text-align: center;
+  }
 
-.body_menu_principal:hover{
-    border-radius: 10px;
-    background-color: var(--bgcolorsecundary);
-    color: var(--secundarylettercolor);
-    font-size: 10px;
+  .contenido {
+    margin: 20px;
+    padding: 25px;
+  }
 }
-
-.body_menu_principal_text{
-    color: var(--secundarylettercolor);
-}
-
-.body_menu_equipos{
-    border-radius: 10px;
-    background-color: var(--bgycolor);
-    font-size: 10px;
-    margin: 5px;
-}
-
-.body_menu_equipos:hover{
-    border-radius: 10px;
-    background-color: var(--bgcolorsecundary);
-    color: var(--secundarylettercolor);
-    font-size: 10px;
-}
-
-.body_menu_equipos_text{
-    color: var(--secundarylettercolor);
-}
-
-.body_menu_cuadropartidos{
-    border-radius: 10px;
-    background-color: var(--bgycolor);
-    font-size: 10px;
-    margin: 5px;
-}
-
-.body_menu_cuadropartidos:hover{
-    border-radius: 10px;
-    background-color: var(--bgcolorsecundary);
-    color: var(--secundarylettercolor);
-    font-size: 10px;
-}
-
-.body_menu_cuadropartidos_text{
-    color: var(--secundarylettercolor);
-}
-
-.body_menu_resultados{
-    border-radius: 10px;
-    background-color: var(--bgycolor);
-    font-size: 10px;
-    margin: 5px;
-}
-
-.body_menu_resultados:hover{
-    border-radius: 10px;
-    background-color: var(--bgcolorsecundary);
-    color: var(--secundarylettercolor);
-    font-size: 10px;
-}
-
-.body_menu_resultados_text{
-    color: var(--secundarylettercolor);
-}
-
-.body_menu_colaboradores{
-    border-radius: 10px;
-    background-color: var(--bgycolor);
-    font-size: 10px;
-    margin: 5px;
-}
-
-.body_menu_colaboradores:hover{
-    border-radius: 10px;
-    background-color: var(--bgcolorsecundary);
-    color: var(--secundarylettercolor);
-    font-size: 10px;
-}
-
-.body_menu_colaboradores_text{
-    color: var(--secundarylettercolor);
-}
-
-.body_principal{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px;
-}
-
-.body_principal_title{
-    align-items: center;
-    font-size: 20px;
-}
+/* Pagina Principal*/
