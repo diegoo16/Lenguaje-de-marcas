@@ -11,8 +11,8 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
-body {
+/* Pagina Principal*/
+.body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
 }
 
 
-/* Pagina Principal*/
+
 .header {
   background: linear-gradient(90deg, #020c2b, #0b2cff);
   color: var(--blanco);
